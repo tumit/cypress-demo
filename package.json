@@ -9,7 +9,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "cypress": "^3.8.2"
+  "dependencies": {
+    "cypress": "^3.8.2",
+    "cypress-cucumber-preprocessor": "^2.0.1"
   }
 }
