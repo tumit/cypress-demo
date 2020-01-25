@@ -8,7 +8,6 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                sh "whoami"
                 sh "ls -l /.cache/Cypress"
                 sh "cypress run"
             }
