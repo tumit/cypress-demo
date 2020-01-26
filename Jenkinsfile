@@ -1,8 +1,8 @@
 pipeline {
     agent {
         docker {
-            image "cypress/browsers:chrome67"
-            args "--entrypoint=''"
+            image 'cypress/included:3.3.2'
+            args "--entrypoint='' -u root"
         }
     }
     stages {
