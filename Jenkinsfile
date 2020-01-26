@@ -1,14 +1,13 @@
 pipeline {
     agent {
         docker {
-            image "cypress/included:3.2.0"
+            image "cypress/browsers:chrome67"
             args "--entrypoint=''"
         }
     }
     stages {
         stage('test') {
             steps {
-                sh "ls -l /.cache/Cypress"
                 sh "cypress run"
             }
         }
