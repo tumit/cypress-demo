@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'cypress/included:3.3.2'
-            args "--entrypoint='' -u root"
+            args "--entrypoint='' -u root --privileged"
         }
     }
     stages {
