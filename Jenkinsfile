@@ -6,6 +6,9 @@ pipeline {
             reuseNode true
         }
     }
+    options {
+        ansiColor('xterm')
+    }
     environment {
         CYPRESS_trashAssetsBeforeRuns = 'false'
     }
