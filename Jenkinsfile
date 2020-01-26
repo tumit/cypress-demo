@@ -18,7 +18,6 @@ pipeline {
             stages {
                 stage('test') {
                     steps {
-                        sh "npm install"
                         sh "cypress run"
                     }
                 }
