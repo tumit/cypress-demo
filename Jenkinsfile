@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'cypress/included:3.3.2'
+            image 'cypress/included:3.8.0'
             args "--entrypoint='' -u root"
             reuseNode true
         }
@@ -12,7 +12,6 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                sh "npm install"
                 sh "cypress run"
             }
         }
