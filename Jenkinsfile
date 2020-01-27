@@ -5,6 +5,9 @@ pipeline {
             args "--entrypoint='' -u root"
         }
     }
+    options {
+        ansiColor('xterm')
+    }
     stages {
         stage('test') {
             steps {
