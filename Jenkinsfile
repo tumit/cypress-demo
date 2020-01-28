@@ -6,11 +6,10 @@ pipeline {
     }
     stages {
         stage("test") {
-            options {
-                ansiColor("xterm")
-            }
             steps {
-                sh "npm run test:ci"
+                ansiColor('xterm') {
+                    sh "npm run test:ci"
+                }
             }
         }
     }
