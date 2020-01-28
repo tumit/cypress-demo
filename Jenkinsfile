@@ -1,6 +1,8 @@
 pipeline {
     agent {
-        dockerfile true
+        dockerfile {
+            args '--entrypoint='' -u root'
+        }
     }
     options {
         ansiColor('xterm')
