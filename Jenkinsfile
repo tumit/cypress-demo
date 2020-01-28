@@ -1,14 +1,14 @@
 pipeline {
     agent {
         dockerfile {
-            args '--entrypoint='' -u root'
+            args "--entrypoint='' -u root"
         }
     }
     options {
-        ansiColor('xterm')
+        ansiColor("xterm")
     }
     stages {
-        stage('test') {
+        stage("test") {
             steps {
                 sh "npm run test:verify"
                 sh "npm run test:ci"
