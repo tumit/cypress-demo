@@ -4,13 +4,12 @@ pipeline {
             args "--entrypoint='' -u root"
         }
     }
-    options {
-        ansiColor("xterm")
-    }
     stages {
         stage("test") {
+            options {
+                ansiColor("xterm")
+            }
             steps {
-                sh "npm run test:verify"
                 sh "npm run test:ci"
             }
         }
