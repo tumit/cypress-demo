@@ -1,6 +1,7 @@
 pipeline {
     agent {
         dockerfile {
+            filename 'Dockerfile'
             args '--entrypoint='' -u root'
         }
     }
