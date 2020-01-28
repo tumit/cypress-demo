@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                sh "npm install"
+                sh "whoami | id"
                 sh "npm run test:ci"
             }
         }
