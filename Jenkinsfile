@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('test') {
             steps {
-                sh "whoami | id"
+                sh "npm run test:verify"
                 sh "npm run test:ci"
             }
         }
