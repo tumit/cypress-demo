@@ -5,4 +5,5 @@ Feature: Cypress Home Page
     Scenario: Opening a Cypress home page
         Given I open "https://www.cypress.io"
         Then Should has text "npm install cypress"
+        Then Should found Cypress logo
 

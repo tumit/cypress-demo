@@ -7,3 +7,7 @@ Given("I open {string}", url => {
 Then("Should has text {string}", expected => {
     cy.contains(expected);
 });
+
+Then("Should found Cypress logo", () => {
+    cy.get('img[alt="Cypress.io"]').should('be.visible');
+});
